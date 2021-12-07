@@ -1,4 +1,27 @@
 .App {
   text-align: left;
-  padding: 3vh 5vh 3vh 5vh;
+  padding: 1vh 5vh 3vh 5vh;
+  margin-top: 0;
+}
+
+.firstRow,
+.secondRow {
+  display: flex;
+}
+
+.firstRow img,
+.secondRow img {
+  margin: 5px;
+}
+
+.card {
+  max-width: 15vw;
+  margin: 5px;
+}
+.card img {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 2px 2px 2px black;
+  object-fit: cover;
 }
