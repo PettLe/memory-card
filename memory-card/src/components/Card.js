@@ -28,9 +28,9 @@ export default function Card(props) {
     Twelveth,
   ];
 
-  const { id } = props;
+  const { id, cardClicked } = props;
   return (
-    <div className="card">
+    <div id={id} className="card" onClick={(e) => cardClicked(e)}>
       <img src={standPics[id - 1]} alt={id}></img>
     </div>
   );

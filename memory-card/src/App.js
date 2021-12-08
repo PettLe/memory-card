@@ -25,40 +25,62 @@ function App() {
     }
     return cards;
   }
-  console.log(randomizeCards());
+  randomizeCards();
+
+  //Function to handle clicked cards
+  function cardClicked(e) {
+    if (cardArray.includes(e.target.alt)) {
+      if (score > hiScore) {
+        setHiScore(score);
+      }
+      setScore(0);
+      setCardArray([]);
+    } else {
+      if (score < 11) {
+        setScore(score + 1);
+        setCardArray(cardArray.concat(e.target.alt));
+      } else if (score === 11) {
+        setScore(score + 1);
+        setHiScore(score + 1);
+        alert("YOU THOUGHT YOU WON THE GAME BUT IT WAS ME, DIO!");
+        setScore(0);
+        setCardArray([]);
+      }
+    }
+  }
 
   //Effect to randomize cards after every click
   useEffect(() => {
     randomizeCards();
   });
 
-  //Temporary function for testing
-  function updateScore() {
-    setScore(score + 1);
-  }
-
   return (
     <div className="App">
-      <h1>Memory game</h1>
-      <h3>Score: {score}</h3>
-      <h3>Hi-Score: {hiScore}</h3>
-      <p>Click a card! ...but only once!</p>
-      <Game cardArray={cardArray} updateScore={updateScore} />
+      <div className="frontText">
+        <h1>Bizarre Memory Game</h1>
+        <h2>Score: {score}</h2>
+        <h3>Hi-Score: {hiScore}</h3>
+        <div className="bottomText">
+          <h3>Click a card! ...but only once!</h3>
+          <h3>&copy; Petteri Leino, 2021</h3>
+        </div>
+      </div>
+      <Game cardArray={cardArray} />
       <div className="firstRow">
-        <Card id={cards[0]} />
-        <Card id={cards[1]} />
-        <Card id={cards[2]} />
-        <Card id={cards[3]} />
-        <Card id={cards[4]} />
-        <Card id={cards[5]} />
+        <Card id={cards[0]} cardClicked={cardClicked} />
+        <Card id={cards[1]} cardClicked={cardClicked} />
+        <Card id={cards[2]} cardClicked={cardClicked} />
+        <Card id={cards[3]} cardClicked={cardClicked} />
+        <Card id={cards[4]} cardClicked={cardClicked} />
+        <Card id={cards[5]} cardClicked={cardClicked} />
       </div>
       <div className="secondRow">
-        <Card id={cards[6]} />
-        <Card id={cards[7]} />
-        <Card id={cards[8]} />
-        <Card id={cards[9]} />
-        <Card id={cards[10]} />
-        <Card id={cards[11]} />
+        <Card id={cards[6]} cardClicked={cardClicked} />
+        <Card id={cards[7]} cardClicked={cardClicked} />
+        <Card id={cards[8]} cardClicked={cardClicked} />
+        <Card id={cards[9]} cardClicked={cardClicked} />
+        <Card id={cards[10]} cardClicked={cardClicked} />
+        <Card id={cards[11]} cardClicked={cardClicked} />
       </div>
     </div>
   );
