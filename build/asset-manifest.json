@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.e3fb7358.chunk.css",
+    "main.js": "/memory-card/static/js/main.21049580.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.21049580.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.06abf29f.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.06abf29f.js.map",
+    "static/js/2.21efb25d.chunk.js": "/memory-card/static/js/2.21efb25d.chunk.js",
+    "static/js/2.21efb25d.chunk.js.map": "/memory-card/static/js/2.21efb25d.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.e3fb7358.chunk.css.map": "/memory-card/static/css/main.e3fb7358.chunk.css.map",
+    "static/js/2.21efb25d.chunk.js.LICENSE.txt": "/memory-card/static/js/2.21efb25d.chunk.js.LICENSE.txt",
+    "static/media/d4c.dd6081e0.jpg": "/memory-card/static/media/d4c.dd6081e0.jpg",
+    "static/media/App.css": "/memory-card/static/media/gogogo.b7fd1c1f.png",
+    "static/media/goldexp.38817e74.jpg": "/memory-card/static/media/goldexp.38817e74.jpg",
+    "static/media/gratefuldead.c7d52965.jpg": "/memory-card/static/media/gratefuldead.c7d52965.jpg",
+    "static/media/killerqueen.0d04fb07.jpg": "/memory-card/static/media/killerqueen.0d04fb07.jpg",
+    "static/media/kingcrimson.2220f7e9.jpg": "/memory-card/static/media/kingcrimson.2220f7e9.jpg",
+    "static/media/kingnothing.a6eadc88.jpg": "/memory-card/static/media/kingnothing.a6eadc88.jpg",
+    "static/media/kiss.9d64e5ba.jpg": "/memory-card/static/media/kiss.9d64e5ba.jpg",
+    "static/media/madeinheaven.ce7b301c.jpg": "/memory-card/static/media/madeinheaven.ce7b301c.jpg",
+    "static/media/nutkingcall.d24c33e7.jpg": "/memory-card/static/media/nutkingcall.d24c33e7.jpg",
+    "static/media/starplatinum.1350ecd2.jpg": "/memory-card/static/media/starplatinum.1350ecd2.jpg",
+    "static/media/stickyfingers.6711ab4b.jpg": "/memory-card/static/media/stickyfingers.6711ab4b.jpg",
+    "static/media/stonefree.c4dd4991.jpg": "/memory-card/static/media/stonefree.c4dd4991.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06abf29f.js",
+    "static/js/2.21efb25d.chunk.js",
+    "static/css/main.e3fb7358.chunk.css",
+    "static/js/main.21049580.chunk.js"
+  ]
+}
